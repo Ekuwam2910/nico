@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.ekuwam {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+#emuria {
+  background: url("images/12.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
+}
+.logo {
+  position: absolute;
+  margin: 100px 0 0 100px;
+  width: 280px;
+  height: 400px;
+  background: url("images/25.png") no-repeat;
+  background-size: 200%;
+  transition: all .5s;
+  background-position: center center;
+}
+.f-nav{ 
+  z-index: 9999; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  background: #000;
+  box-shadow: rgba(0,0,0,.1) 0 10px 15px;  
+}
+.menu{
+  width: 360px;
+  margin: auto auto;
+}
+.menu .menu-list, .menu .sub-menu{
+  list-style: none;
+  background: transparent;
+}
+.menu a{
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  font-weight: 400;
+  letter-spacing:0.2em;
+  outline: 0;
+  text-align: center;
+}
+.menu > .menu-list > li{
+  float: left;
+  position: relative;
+  width: 90px;
+  
+}
+.menu > .menu-list > li > a {
+  padding: 20px;
+  margin: 0 0px;
+  color: #fff;
+  transition: all .1s;
+  text-shadow: 10px 10px 15px #000;
+}
+
+.menu > .menu-list > li:hover a {
+  transform: scale(1.1);
+}
+section#sarah {
+  color: #adabab;
+}
+.ekaru {
+  min-height: 300px;
+}
+.content {
+  padding: 40px;
+  text-align: center;
+}
+#main{
+  height: 450px;
+  margin-top: 150px;
+  padding-bottom: 100px;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+  color: #fff;
+}
+#main h2 {
+  font-size: 70px;
+  text-shadow: 10px 10px 15px #000;
+}
+#main p {
+  font-size: 20px;
+  margin-top: 40px;
+}
+#james {
+  background: #333;
+  padding: 2em;
+}
+#james h2{
+  color: #fff;
+  padding-bottom: 20px;
+}
+#james p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#moses h3 {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 5px 5px 15px #000;
+}
+#moses h3 {
+  font-size: 20px;
+  padding-top: 40px;
+  text-shadow: 5px 5px 15px #000;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#do{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 112vH;
+  background-color: #F5F5F5;
+  font-size: 26px;
+}
+
+h1{
+  font-size: 30pt;
+  font-weight: 500;
+  color: #363638;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 99%;
+}
+
+.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 20px 1%;
+
+  max-width: 410px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+
+.item *{
+  transition: all 0.35s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 410px;
+}
+
+.item:hover img {
+  opacity: 0;
+}
+
+.text{
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  color: #01A2AC;
+}
+
+.text h3{
+  color: black;
+}
+
+.item:hover .text{
+  top: 10%;
+}
+
+.item:hover .button{
+  bottom: 20%;
+}
+
+.item .button{
+  position: absolute;
+  bottom: -100px;
+  left: 25%;
+  width: 50%;
+  border: 3px solid #01A2AC;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  background-color: #01A2AC;
+  color: #F5F5F5;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #F5F5F5;
+  margin: 5% auto;
+  box-sizing: border-box;
+  width: 700px;
+  max-height: 714px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.scale{
+  animation: scale 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+#img{
+  width: 100%;
+  height: 450px;
+}
+
+#details{
+  padding: 25px;
+  text-align: left;
+  position: relative;
+  height: 264px;
+  box-sizing: border-box;
+  border-top: 1px solid #363638;
+}
+
+#details *{
+  transition: all .3s;
+}
+
+#title{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#details .button{
+  position: absolute;
+  width: 30%;
+  background-color: #01A2AC;
+  color: #F5F5F5;
+  text-align: center;
+  left: 25px;
+  bottom: 35px;
+  padding: 15px;
+}
+
+#details i{
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  font-size: 3rem;
+  color: #01A2AC;
+}
+
+#details .button:hover,
+i:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #363638;
+  text-decoration: none;
+  cursor: pointer;
+}
+table {
+  margin: auto;
+  padding-top: 50px;
+}
+th {
+  padding: 20px 40px;
+}
+th > a {
+  outline: 0;
+}
+img {
+  width: 250px;
+  height: 200px;
+}
+.table img {
+  width: 30px;
+  height: 30px;
+}
+.os-fixing {
+  width: 80px;
+  height: 80px;
+  overflow: auto;
+}
+#skills{
+  margin-top: 100px;
+  font-size: 35px;
+  
+}
+h3{
+  font-size: 18px;
+}
+.care {
+  transition: height .2s; 
+}
+
+.care:hover > img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  min-height: 100px;
+  background: #000;
+}
+
+footer h3 {
+  font-size: 20px;
+  color: #fff;
+  padding: 40px;
+}
+.error-message{
+  color: red;
+}
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width: 720px){
+  
+  .menu a {
+    font-size: 1em;
+    letter-spacing: 0em;
+  }
+  .menu > ul{
+    padding-left: 0px;
+  }
+  th {
+    padding: 10px 20px;
+  }
+  
+  #main h2 {
+    font-size: 30px;
+  }
+  #main h3 {
+    font-size: 30px;
+  }
+  #main p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+
+  img {
+    width: 55px;
+    height: 55px;
+  } 
+}
+
+@media screen and (max-width: 470px){
+  .content {
+    padding: 20px;
+  }
+  .header-top {
+    margin-bottom: 0;
+  }
+  
+  .profile-photo{
+    height: 150px;
+    width: 150px;
+  }
+  .menu{
+    width: 240px;
+  }
+  .menu > .menu-list {
+    margin-left: -16px;
+  }
+  .menu > .menu-list > li{
+    width: 80px;
+  }
+  .img-table {
+    width: 150px;
+  }
+  th {
+    padding: 5px;
+  }
+  #james {
+    margin-top: 70px;
+  }
+  #main h2 {
+    font-size: 40px;
+  }
+  #main  h3 {
+    font-size: 25px;
+  }
+  #main  p {
+    font-size: 16px;
+  }
+  #james h2 {
+    font-size: 40px;
+  }
+  #james p {
+    font-size: 15px;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  background-size: cover;
+}
+
+.contact-header {
+  font-family: "Montserrat", sans-serif;
+  margin: 10rem 10rem 3rem 10rem;
+  text-align: center;
+}
+
+#co-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#co-text {
+  font-size: 1.5rem;
+  color: white;
+  font-style: inherit;
+  padding-bottom: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  line-height: 2;
+  height: auto;
+  width: 70%;
+  background-color: rgba(0,0,0,0.6);
+  margin-bottom: 10rem;
+}
+
+.contact-form {
+  font-family: "Montserrat", sans-serif;
+  padding: 5rem;
+}
+
+#form-title {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1px;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-field {
+  outline: none;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.09);
+  margin-bottom: .9rem;
+}
+
+#name, #email, #subject, #message {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 2rem;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+textarea, #message {
+  width: 100%;
+  color: #fff;
+  overflow: visible;
+}
+
+#form-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border: none;
+  color: black;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 200%;
+  height: 60px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#form-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2.5%);
+  box-shadow: 0 0 15px 0 #000;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5rem;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.contact-info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  transition: all .3s ease;
+}
+
+.contact-info a:hover {
+  transform: translateY(-2.5%);
+  color: #999;
+}
+
+@media screen and (max-width: 960px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  #form-btn {
+    width: 100%;
+  }
+  
+  #form-title {
+    margin: 3rem auto;
+  }
+  
+  .contact-header{
+    margin: 5rem 5rem 3rem 5rem;
+  }
+  
+  #co-title {
+    font-size: 1rem;
+  }
+  
+  #co-text {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .form-field {
+    width: 125%;
+  }
+  
+  #form-title {
+    margin: 3rem auto;
+  }
+  
+  #form-btn {
+    width: 125%;
+  }
+  
+  .contact-header{
+    margin: 7rem 7rem 3rem 7rem;
+  }
+  
+  .contact-info {
+    padding: 5rem;
+  }
+  
+  #co-title {
+    font-size: 1rem;
+  }
+  
+  #co-text {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .form-field {
+    width: 200%;
+  }
+  
+  #form-btn {
+    width: 200%;
+  }
+}
+* {
+  font-family: Helvetica;
+}
+label {
+  width: 90px;
+  display: inline-block;
+}
+* {
+  font-family: Helvetica;
+}
+label {
+  width: 90px;
+  display: inline-block;
+}

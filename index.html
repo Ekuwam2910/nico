@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nico</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="emuria">
+    <header class="ekuwam">
+      <div class="logo"></div>
+    </header>
+    <nav class="menu-bar">
+      <div class="menu">
+        <ul class="menu-list">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#james">About</a></li>
+          <li><a href="#do">work</a></li>
+          <li><a href="#moses">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="sarah">
+      <article class="ekaru" id="main">
+        <div class="content">
+          <center>
+            <h2>Hi, There!</h2>
+            <h3>I'm glad you're here</h3>
+            <p id="phrase">
+              "Life can only be understood by looking back, but can only be lived by looking forward" <br />
+              - Nicodemus Ekuwam
+            </p>
+          </center>
+        </div>
+      </article>
+      <article class="ekaru" id="james">
+        <div class="content">
+          <h2>About Me</h2>
+          <p>
+            I am a frontend web developer, I am more than happy to create top-quality solutions in designing
+            and developing a website that will help your brand reach its goals,
+            increase profit, stand out from other competitors by providing designs that are on purpose, friendly, and
+            aesthetic for users.
+            For one consistent year now, I have designed and developed websites for individuals, agencies, small to
+            medium-sized businesses, non-profits, and startups.
+          </p>
+          <h5 id="skills">Skills</h5 id="james">
+          <table class="img-table">
+            <tr>
+              <th class="care">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" />
+                <h3>HTML</h3>
+              </th>
+              <th class="care">
+                <img src="images/big.png" />
+                <h3>CSS</h3>
+              </th>
+              <th class="care">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" />
+                <h3>JAVASCRIPT</h3>
+              </th>
+            </tr>
+            <tr>
+              <th class="care">
+                <img src="images/typ.png" />
+                <h3>PPT PRESENTATION</h3>
+              </th>
+
+              <th class="care">
+                <img src="images/word.png" />
+                <h3>WORD TYPING</h3>
+              </th>
+
+
+              <th class="care">
+                <img src="images/fek.jpg" />
+                <h3>DATA ENTRY</h3>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </article>
+     
+        <section id="do">
+          <h1>Works</h1>
+
+          <div class="container">
+            <div class="item" id="1">
+              <img src="images/idar1.png" alt="Idar group security">
+              <div class="text">
+                <h3>idar group security</h4>
+              </div>
+              <div class="button">View</div>
+            </div>
+
+            <div class="item" id="2">
+              <img src="images/Marian.png" alt="Children's Home">
+              <div class="text">
+                <h3>Marian's Childrens</h4>
+              </div>
+              <div class="button">View</div>
+            </div>
+
+            <div class="item" id="3">
+              <img src="images/Mary.png" alt="">
+              <div class="text">
+                <h3>Naroo</h4>
+              </div>
+              <div class="button">View</div>
+            </div>
+
+            <div class="item" id="4">
+              <img src="images/254.png" alt="sky skippers">
+              <div class="text">
+                <h3>Skippers</h4>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div id="preview" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="img" src="">
+              <div id="details">
+                <h3 id="title"></h3>
+                <p id="info">Some text</p>
+                <div class="button" id="live">View</div>
+                <i class="fab fa-github-square" id="github"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="moses">
+        <div class="contact-header">
+          <h3 id="co-text">I'd really like to hear from you! or to say hello;</h3>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-form">
+            <h3 id="form-title">Send me a message</h3>
+            <form id="my-contact-form" action="contact.php" method="post">
+              <fieldset>
+                <div class="form-field name">
+                  <input name="name" type="text" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-field email">
+                  <input name="email" type="email" id="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-field subject">
+                  <input name="subject" type="text" id="subject" placeholder="Subject" required />
+                </div>
+                <div class="form-field message">
+                  <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                </div>
+
+              </fieldset>
+
+
+
+              <input id="form-btn" type="submit" value="send" />
+            </form>
+
+            <div id="success-message" class="hidden">
+              <h3>submitted succesfully</h3>
+              <h4>I will get in touch soon</h4>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h3>Email me </h3>
+            <a href="mailto:nicodemusekuwam@gmail.com">
+              <p>nicodemusekuwam@gmail.com</p>
+            </a>
+            <h3>Find me on</h3>
+            <div class="contact-links">
+              <a href="https://www.upwork.com/freelancers/~01e29751b6cb736ed5">Upwork</a>
+              <br />
+              <a href="https://www.linkedin.com/in/nicodemus-ekuwam-3733a7209/">LinkedIn</a>
+              <br />
+              <a href="https://www.facebook.com/ekuwam.nicodemus">Facebook</a>
+              <br />
+              <a href="https://www.instagram.com/i.am_nicodemus/">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer id="footer">
+      <center>
+        <h3>All Rights reserved@Nico portfolio 2023</h3>
+      </center>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
